@@ -1,0 +1,34 @@
+### base url
+GET http://localhost:3000
+
+### get a single song
+GET http://localhost:3000/songs/single/1
+
+### get all song with pagination
+GET http://localhost:3000/songs/all
+
+### create a new song
+POST http://localhost:3000/songs/create
+Content-Type: application/json
+
+{
+  "title": "Song Title",
+  "artist": [
+    "Jolas Official",
+    "ALOBAM",
+    "TOBACCO Nation"
+    ],
+  "releaseDate": "2024-06-13",
+  "duration": "12:30"
+}
+
+
+### create a new song
+PUT http://localhost:3000/songs/replace/1
+
+### update song
+PATCH http://localhost:3000/songs/update/1
+
+### update song
+DELETE http://localhost:3000/songs/delete/1
+
